@@ -17,10 +17,10 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   
-  <body>
+  <body class="min-vh-100">
 
     <%= render 'home/header' %>
-    <div class="container mt-4">
+    <div class="container pt-4 pb-5">
     
       <% if notice %>
         <%= render 'layouts/alerts' %>
