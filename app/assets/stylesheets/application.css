@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+.form-floating > .form-control {
+  height: calc(3rem + 2px);
+}
+
+.form-floating > label {
+  padding: .75rem .75rem;
+}
+
+.form-floating > .form-control:focus~label, .form-floating > .form-control:not(:placeholder-shown) ~ label {
+  transform: scale(.8) translateY(-.4rem) translateX(.15rem);
+}

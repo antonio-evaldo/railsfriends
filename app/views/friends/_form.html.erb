@@ -11,33 +11,33 @@
     </div>
   <% end %>
 
-  <div class="field form-floating mb-3">
+  <div class="field form-floating mb-2">
     <%= form.text_field :first_name, class:"form-control", placeholder: :first_name %>
     <%= form.label :first_name %>
   </div>
 
-  <div class="field form-floating mb-3">
+  <div class="field form-floating mb-2">
     <%= form.text_field :last_name, class:"form-control", placeholder: :last_name %>
     <%= form.label :last_name %>
   </div>
 
-  <div class="field form-floating mb-3">
+  <div class="field form-floating mb-2">
     <%= form.text_field :email, class:"form-control", placeholder: :email %>
     <%= form.label :email %>
   </div>
 
-  <div class="field form-floating mb-3">
+  <div class="field form-floating mb-2">
     <%= form.text_field :phone, class:"form-control", placeholder: :phone %>
     <%= form.label :phone %>
   </div>
 
-  <div class="field form-floating mb-4">
+  <div class="field form-floating mb-3">
     <%= form.text_field :twitter, class:"form-control", placeholder: :twitter %>
     <%= form.label :twitter %>
   </div>
 
   <div class="field">
-    <%= form.number_field :user_id, id: :friend_user_id, class:"form-control", value: current_user.id, type: :hidden %>
+    <%= form.number_field :user_id, id: :friend_user_id, value: current_user.id, type: :hidden %>
   </div>
 
   <div class="actions">
